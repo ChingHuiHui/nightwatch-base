@@ -1,14 +1,8 @@
 module.exports = {
   Demo(browser) {
     browser
-      .url("https://www.ecosia.org/")
-      .waitForElementVisible("body")
-      .assert.titleContains("Ecosia")
-      .assert.visible("input[type=search]")
-      .sendKeys("input[type=search]", "nightwatch")
-      .assert.visible("button[type=submit]")
-      .click("button[type=submit]")
-      .assert.containsText(".mainline-results", "Nightwatch.js")
-      .end();
+      .url('https://github.com/ChingHuiHui/nightwatch-base')
+      .expect.element('h1')
+      .text.to.contains('nightwatch-base')
   },
-};
+}
