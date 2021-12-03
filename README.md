@@ -1,5 +1,8 @@
 # nightwatch-base
 
-## npm install
+**Default WebDriver: chromedriver**
 
-## npm test
+## STEP
+
+1. npm install
+2. npm test
